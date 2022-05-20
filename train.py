@@ -1,5 +1,4 @@
 # %%
-from calendar import EPOCH
 import cv2
 import torch
 from torchsummary import summary
@@ -27,7 +26,8 @@ parser.add_argument(
 args = parser.parse_args()
 
 customDatasetTrain = CustomDataset(datasetDir=args.train_folder)
-img, bb = customDatasetTrain[1]
+img, bb, _ = customDatasetTrain[1]
+
 
 NUM_CLASSES = config["num_classes"]
 LEARNING_RATE = config["learning_rate"]
