@@ -1,7 +1,7 @@
-#salvare immagini in notazione yolo
+#image labels in yolo notation
 
-#lanciare test
+#run inference
 python test.py --out_folder out --test_folder ./dataset/test --model_path model2
 
-#lanciare train
+#run training
 python train.py --model_path model2 --train_folder ./dataset/train
